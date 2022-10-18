@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WHEEL SAFE</string>
+    <string name="menu1">공지사항</string>
+    <string name="menu2">FAQ</string>
+    <string name="menu3">로그인</string>
+    <string name="menu4">제보하기</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">아이디</string>
+    <string name="prompt_password">비밀번호</string>
+    <string name="action_sign_in">회원 가입</string>
+    <string name="action_login">로그인</string>
+</resources>

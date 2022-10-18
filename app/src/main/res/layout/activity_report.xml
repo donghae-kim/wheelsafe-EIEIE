@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="위험한 장소 명"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:hint="예시) 상도주민센터 앞 횡단보도"
+            android:paddingLeft="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="주소"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:hint="예시) 서울 동작구 상도로 53길 9"
+            android:background="@drawable/edittext"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="상세 설명"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/explain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:background="@drawable/edittext"
+            android:hint="예시) 횡단보도 공사 중"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="사진"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <Button
+                android:id="@+id/btn_photo"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="15dp"
+                android:ems="10"
+                android:text="사진 촬영"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/border_login"
+                android:backgroundTint="@color/purple_500"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_photo_gal"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:ems="10"
+                android:text="앨범에서 읽어오기"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/border_login"
+                android:backgroundTint="@color/purple_500"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:text="사진 업로드"
+            tools:ignore="MissingConstraints"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="제보 전송"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/border_login"
+            android:backgroundTint="@color/purple_500" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
